@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -28,8 +33,186 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
-	margin: 0;
+  margin: 0;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: auto;
+  color: #242424;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  font-size: 36px;
+  color: #3e606b;
+}
+h3 {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  text-decoration: ;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+header a:focus,
+header a:hover,
+header a:active {
+  background-color: #f195b2;
+  border-radius: 20px;
+  color: white;
+}
+.logo {
+  width: 170px;
+}
+
+.hero {
+  /* background-image: url(images/cupcake.jpg); */
+  color: white;
+  padding: 80px 40% 80px 0;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.uvodniobrazek {
+  background: #24262b center/cover no-repeat;
+  background-image: url(images/cupcake.jpg);
+}
+
+.hero p {
+  font-style: italic;
+  font-size: 21px;
+  padding-right: 40%;
+  margin: 0;
+}
+
+.kontejneruvod {
+  background-color: #ccffff;
+  padding: 80px 0;
+}
+
+.levysloupec {
+  margin-right: 30px;
+}
+
+.uvod {
+  display: flex;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.uvod a {
+  background-color: #f195b2;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.uvod a:focus,
+.uvod a:hover,
+.uvod a:active {
+  background-color: #d2567d;
+}
+
+.dnesninabidka {
+  background-color: #f0f0f0;
+}
+
+.nabidka {
+  margin: 0 auto 80px auto;
+  width: 1100px;
+  padding: 80px 0;
+}
+
+.galerie {
+  display: flex;
+}
+
+.produkt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  flex-shrink: 1;
+  box-shadow: 2px 2px 1px #c9c8c8;
+}
+
+.produkt.jedna,
+.produkt.dve,
+.produkt.tri {
+  margin-right: 30px;
+}
+
+.produkt img {
+  max-width: 100%;
+  height: auto;
+}
+
+.produkt aside {
+  padding: 20px;
+  text-align: center;
+}
+
+/* .pristup img {
+  order: 1;
+} */
+
+.pravysloupec {
+  margin-left: 30px;
+}
+
+footer {
+  background-color: #303339;
+  padding: 30px 0;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.pristup {
+  display: flex;
+  margin: 80px auto;
+  width: 1100px;
+}
+
+.produkt,
+.uvod img,
+.pristup img {
+  border-radius: 5px;
+}
+
+.produkt img {
+  border-radius: 5px 5px 0 0;
+}
